@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>2-11-19</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body  style="background-color:darkgrey ;">
+   
+        <div class="container">
+        <div class="row">
+    
+          <div style="background-color:rgb(235, 60, 60);padding:20px;border: white; border-block-width: 20px;height: 487px;width:300px;border: 15px solid white;" class="col-sm-12 col-md-2 col-lg-3">
+            <h3>Become a Member</h3>
+            <p></p>
+          </div>
+
+          <div class="col-sm-12 col-md-2 col-lg-1"></div>
+
+    ​      <div style="background-color:rgb(235, 60, 60);padding:20px;height: 487px;width:300px;border: 15px solid white;" class="col-sm-12 col-md-2 col-lg-3">
+            <h2>Settings</h2>
+            <p>Name:</p>
+            <input  id="name" type="text" placeholder="Enter your name" onblur="Naming()">
+
+            <p id="N1"style="visibility: hidden; ">Field is required</p>  
+
+            <p>Email:</p>
+            <input  id="email"  type="text" placeholder="Enter your email" onblur="Email()">
+            <p id="E1" style="visibility: hidden;">Please enter a valid email</p><br>
+            
+            
+            <p>Password:</p>
+            <input id="password" type="password" placeholder="Enter your password" onblur="Password()">
+            <p id="p1" style="visibility: hidden;">Please make sure your <br> password has atleast 8 characters</p>
+
+
+            <p>Confirm password:</p>
+            <input id="cp" type="password" placeholder="Enter your password Again" onblur="Confirm()">
+            <span id="ok"    class="glyphicon glyphicon-ok" style="visibility: hidden;"></span>            
+            <span id="remove"  class="glyphicon glyphicon-remove" style="visibility: hidden;"></span>
+            <p id="p2" style="visibility: hidden;">Field is required</p>
+             
+          </div>
+
+          <div class="col-sm-12 col-md-2 col-lg-1"></div>
+
+          <div style="background-color:rgb(235, 60, 60); height: 487px;width:300px;border: 15px solid white;" class="col-sm-12 col-md-2 col-lg-4">
+          
+            <p>Birthday:</p>
+            <input type="date" placeholder="Enter your DOB" onblur="date()" id="dates" ><br>
+            <p id="age" style="visibility: hidden;">You need a parent's permission to join. <input type="checkbox">Tick here if your child can join:</p><br>
+
+            <p>Short Bio(max 140 characters):</p>
+            <textarea id="text"style="width:200px; height:100px;" onkeyup="count()" maxlength="140"></textarea>
+
+            <label id="num" >140</label>
+            <button style="background-color: black;color: white;">Register</button>
+          </div>
+       </div>
+      </div>
+      
+  
+   <script src="Scrpt.js"></script>
+</body>
+</html>
